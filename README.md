@@ -43,10 +43,6 @@
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
-        I am a designer, photographer, musician, illustrator, physical and digital curator with a formal education in graphic design. I graduated from Portland State University’s Graphic Design program in 2024.<br>
-        <br>
-        If you would like to collaborate, need help with a design project, production or just wanna chat, send me an email or reach out on social media. ☮<br>
-        <br>
         <a href="https://www.are.na/alex-s-vs8f8ybbddg/channels" target="_blank">Are.na</a><br>
         <a href="https://www.instagram.com/alexpshelley/" target="_blank">Instagram</a><br>
         <a href="https://www.linkedin.com/in/alex-shelley-48817a273/" target="_blank">Linkedin</a><br>
