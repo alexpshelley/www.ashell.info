@@ -1,45 +1,5 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        * {
-            font-family: Times New Roman, serif;
-        }
-        body {
-            margin: 0;
-            font-size: 12px; /* Font size set to 12px */
-            line-height: 1.2; /* Tight line height */
-        }
-        a, a:visited {
-            color: black;
-            font-style: italic;
-            text-decoration: none;
-        }
-        .information {
-            z-index: 1000;
-            margin: 1.2em;
-            position: absolute;
-            font-size: 12px; /* Font size set to 12px */
-            line-height: 1.2; /* Tight line height */
-        }
-        .container {
-            z-index: 1;
-            width: 100vw;
-            height: 100vh;
-            margin: auto;
-            position: relative;
-        }
-        .image_container {
-            width: 800px;
-            height: 500px;
-            display: flex;
-        }
-    </style>
-</head>
 <body>
-    <div class="information">
+    <div class="information" style="text-align: left;">
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
