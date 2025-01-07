@@ -9,8 +9,8 @@
         }
         body {
             margin: 0;
-            font-size: 12px; /* Font size set to 12px */
-            line-height: 1.2; /* Tight line height */
+            font-size: 13px; /* Font size set to 12px */
+            line-height: 1.3; /* Tight line height */
         }
         a, a:visited {
             color: black;
