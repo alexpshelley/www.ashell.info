@@ -56,9 +56,7 @@
         <a href="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" target="_blank">
     <img src="/Users/alexshelley/Downloads/shallow_basin_web.jpg" alt="Shallow Basin Flier" width="800" height="500">
 </a>
-        <br>![shallow_basin_web](https://github.com/user-attachments/assets/73a56134-73e4-4ec6-b27a-c74a6c6edfa3)
-![shallow_basin_web](https://github.com/user-attachments/assets/b755aa3d-2dee-4d50-9b5f-4ccf95acd88b)
-
+<br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
         Curation and visual identity. Gallery Install with help from <a href="https://sidpai.site/" target="_blank">Sid Pai</a><br>
         <br>
