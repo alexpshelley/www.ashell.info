@@ -19,8 +19,7 @@
         .information {
             z-index: 1000;
             margin: 1.2em;
-            position: absolute;![shallow_basin_web](https://github.com/user-attachments/assets/85e7ad0e-2d3a-4927-b468-461d93220d6c)
-
+            position: absolute;
             font-size: 12px; /* Font size set to 12px */
             line-height: 1.2; /* Tight line height */
         }
@@ -53,10 +52,8 @@
         Eric Schroeder - High Low, 2025<br>
         DP and editor. Camera operated by <a href="https://www.instagram.com/ethanvanfilm/" target="_blank">Ethan Van der Merwe</a>. <a href="https://freyakargard.com" target="_blank">Freya Kargard</a> as Eric Schroeder. Additional filming by <a href="https://dylanhayes.me/" target="_blank">Dylan Hayes</a><br>
         <br>
-        <a href="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" target="_blank">
-    <img src="/Users/alexshelley/Downloads/shallow_basin_web.jpg" alt="Shallow Basin Flier" width="800" height="500">
-</a>
-<br>
+        -<br>
+        <br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
         Curation and visual identity. Gallery Install with help from <a href="https://sidpai.site/" target="_blank">Sid Pai</a><br>
         <br>
