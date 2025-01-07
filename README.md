@@ -10,7 +10,7 @@
 		}
 		body {
 			margin: 0;
-			font-size: 9px; /* Font size set to 9px */
+			font-size: 12px; /* Font size set to 12px */
 			line-height: 1.2; /* Tight line height */
 		}
 		a, a:visited {
@@ -22,7 +22,7 @@
 			z-index: 1000;
 			margin: 1.2em;
 			position: absolute;
-			font-size: 9px; /* Font size set to 9px */
+			font-size: 12px; /* Font size set to 12px */
 			line-height: 1.2; /* Tight line height */
 		}
 		.container {
