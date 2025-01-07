@@ -40,6 +40,7 @@
 </head>
 <body>
     <div class="information">
+        Alex Shelley<br>
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
