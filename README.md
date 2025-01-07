@@ -1,5 +1,6 @@
 <body>
     <div class="information" style="text-align: left;">
+        Alex Shelley <br>
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
