@@ -53,7 +53,7 @@
         DP and editor. Camera operated by <a href="https://www.instagram.com/ethanvanfilm/" target="_blank">Ethan Van der Merwe</a>. <a href="https://freyakargard.com" target="_blank">Freya Kargard</a> as Eric Schroeder. Additional filming by <a href="https://dylanhayes.me/" target="_blank">Dylan Hayes</a><br>
         <br>
         <a href="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" target="_blank">
-    <img src="path/to/your/image.jpg" alt="Shallow Basin Flier" width="800" height="500">
+    <img src="/Users/alexshelley/Downloads/shallow_basin_web.jpg" alt="Shallow Basin Flier" width="800" height="500">
 </a>
         <br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
