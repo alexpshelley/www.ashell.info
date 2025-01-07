@@ -1,4 +1,5 @@
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,8 +9,8 @@
         }
         body {
             margin: 0;
-            font-size: 14px; /* Font size set to 12px */
-            line-height: 1.4; /* Tight line height */
+            font-size: 14px; /* Font size set to 14px */
+            line-height: 1.4; /* Line height set to 1.4 */
         }
         a, a:visited {
             color: black;
@@ -36,6 +37,7 @@
             display: flex;
         }
     </style>
+</head>
 <body>
     <div class="information">
         Alex Shelley<br>
@@ -43,10 +45,10 @@
         Portland, OR.<br>
         <br>
         Eric Schroeder - High Low, 2025<br>
-        DP and editor. Camera operated by Ethan Van der Merwe. Freya Kargard as Eric Schroeder. Additional filming by Dylan Hayes<br>
+        DP and editor. Camera operated by <a href="https://www.instagram.com/ethanvanfilm/" target="_blank">Ethan Van der Merwe</a>. <a href="https://freyakargard.com" target="_blank">Freya Kargard</a> as Eric Schroeder. Additional filming by <a href="https://dylanhayes.me/" target="_blank">Dylan Hayes</a><br>
         <br>
         Shallow Basin, 2024<br>
-        Curation and visual identity. Gallery Install with help from Sid Pai<br>
+        Curation and visual identity. Gallery Install with help from <a href="https://sidpai.site/" target="_blank">Sid Pai</a><br>
         <br>
         Portrait World, 2024<br>
         Visual identity, web design, merch and photography<br>
