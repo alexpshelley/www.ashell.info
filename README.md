@@ -1,16 +1,15 @@
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
         * {
             font-family: Times New Roman, serif;
-            font-size: 13px; /* Font size set to 13px */
-            line-height: 1.3; /* Line height set to 1.3 */
         }
         body {
             margin: 0;
+            font-size: 14px; /* Font size set to 12px */
+            line-height: 1.4; /* Tight line height */
         }
         a, a:visited {
             color: black;
@@ -21,6 +20,8 @@
             z-index: 1000;
             margin: 1.2em;
             position: absolute;
+            font-size: 12px; /* Font size set to 12px */
+            line-height: 1.2; /* Tight line height */
         }
         .container {
             z-index: 1;
@@ -35,9 +36,9 @@
             display: flex;
         }
     </style>
-</head>
 <body>
     <div class="information">
+        Alex Shelley<br>
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
