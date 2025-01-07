@@ -15,8 +15,7 @@
         }
         a, a:visited {
             color: black;
-            font-style: italic;
-            text-decoration: none;
+            text-decoration: underline; /* Underline links */
         }
         .information {
             z-index: 1000;
@@ -24,6 +23,7 @@
             position: absolute;
             font-size: 12px; /* Font size set to 12px */
             line-height: 1.2; /* Tight line height */
+            max-width: 100%; /* Ensure content does not overflow */
         }
         .container {
             z-index: 1;
@@ -31,11 +31,14 @@
             height: 100vh;
             margin: auto;
             position: relative;
+            overflow: hidden; /* Ensure no overflow */
         }
         .image_container {
-            width: 800px;
-            height: 500px;
+            width: 100%;
+            height: auto;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
