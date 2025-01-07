@@ -6,34 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Alex Shelley</title>
 	<style>
-		*{
+		* {
 			font-family: Times New Roman, serif;
 		}
-		body{
+		body {
 			margin: 0;
 			font-size: 1em;
 			line-height: 1.2;
 		}
-		a, a:visited{
+		a, a:visited {
 			color: black;
 			font-style: italic;
 			text-decoration: none;
 		}
-		a:hover{
-		}
-		.information{
+		.information {
 			z-index: 1000;
 			margin: 1.2em;
 			position: absolute;
 		}
-		.container{
+		.container {
 			z-index: 1;
 			width: 100vw;
 			height: 100vh;
 			margin: auto;
 			position: relative;
 		}
-		.image_container{
+		.image_container {
 			width: 800px;
 			height: 500px;
 			display: flex;
@@ -45,28 +43,28 @@
 			-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
 		}
-		.image_1{
+		.image_1 {
 			width: 50%;
 			height: 100%;
 			margin-right: 0.5em;
 			background-image: none;
 			background-size: cover;
 		}
-		.image_2{
+		.image_2 {
 			width: 50%;
 			height: 100%;
 			margin-left: 0.5em;
 			background-image: none;
 			background-size: cover;
 		}
-		@media(max-width: 840px){
-			.image_container{
+		@media (max-width: 840px) {
+			.image_container {
 				width: 400px;
 				height: 250px;
 			}
 		}
-		@media(max-width: 480px){
-			.image_container{
+		@media (max-width: 480px) {
+			.image_container {
 				width: 320px;
 				height: 200px;
 			}
@@ -76,12 +74,17 @@
 <body style="pointer-events: auto;">
 	<div class="information">
 		Alex Shelley<br>
-		info@alexshelley.com<br>
-		New York<br>
+		ashell.info@gmail.com<br>
+		Portland, OR.<br>
 		<br>
-		<a href="https://shelfshelf.store/">Shelf Shelf</a><br>
-		<a href="https://thenormalstudio.com/">Normal</a><br>
-		<a href="https://music-arts.art/">Music Arts</a>
+		Portrait World, 2024<br>
+		Visual identity, web design, merch and photography<br>
+		<br>
+		No Pressure, 2024<br>
+		Design, layout and copy<br>
+		<br>
+		Specialized Rockhopper<br>
+		Design, layout and copy<br>
 	</div>
 	<div class="container" style="pointer-events: auto;">
 		<div class="image_container">
