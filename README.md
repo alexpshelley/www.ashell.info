@@ -1,42 +1,4 @@
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        * {
-            font-family: Arial, sans-serif; /* Typeface set to Arial */
-        }
-        body {
-            margin: 0;
-            font-size: 14px; /* Font size set to 12px */
-            line-height: 1.4; /* Tight line height */
-        }
-        a, a:visited {
-            color: black;
-            font-style: italic;
-            text-decoration: none;
-        }
-        .information {
-            z-index: 1000;
-            margin: 1.2em;
-            position: absolute;
-            font-size: 12px; /* Font size set to 12px */
-            line-height: 1.2; /* Tight line height */
-        }
-        .container {
-            z-index: 1;
-            width: 100vw;
-            height: 100vh;
-            margin: auto;
-            position: relative;
-        }
-        .image_container {
-            width: 800px;
-            height: 500px;
-            display: flex;
-        }
-    </style>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -126,7 +88,9 @@
         Plum Books, 2021<br>
         Founder and creative director. Co operated with Ali Mehraban<br>
         <br>
-        Plum Books is a music label, design house and zine press based in San Diego, CA. We work closely with San Diego based risograph studio Burn All Books to produce zines, j-cards, pamphlets and prints.<br>
+        Plum Books is a music label, design house and zine press based in San Diego, CA. We work closely with local risograph studio Burn All Books to produce zines, j-cards, pamphlets and prints.<br>
+        <br>
+        Website created by Alex Shelley, 2025 ©<br>
     </div>
     <div class="container" style="pointer-events: auto;">
         <div class="image_container">
