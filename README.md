@@ -39,8 +39,7 @@
     </style>
 </head>
 <body>
-    <div class="information" style="text-align: left;">
-        Alex Shelley <br>
+    <div class="information">
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
