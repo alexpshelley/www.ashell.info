@@ -12,8 +12,7 @@
             line-height: 1.4; /* Tight line height */
         }
         a, a:visited {
-            color: black;
-            font-style: italic;
+            color: navy;
             text-decoration: none;
         }
         .information {
@@ -35,6 +34,19 @@
             height: 500px;
             display: flex;
         }
+        .slideshow {
+            width: 300px;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+        }
+        .slideshow img {
+            width: 100%;
+            display: none;
+        }
+        .slideshow img.active {
+            display: block;
+        }
     </style>
 <body>
     <div class="information">
@@ -49,6 +61,11 @@
         Eric Schroeder - High Low, 2025<br>
         DP and editor. Camera operated by Ethan Van der Merwe.<br>
         Freya Kargard as Eric Schroeder. Additional filming by Dylan Hayes<br>
+        <br>
+        <div class="slideshow" onclick="nextSlide()">
+            <img src="image1.jpg" class="active" alt="Slide 1">
+            <img src="image2.jpg" alt="Slide 2">
+        </div>
         <br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
         Curation and visual identity. Gallery Install with help from Sid Pai<br>
@@ -88,5 +105,15 @@
             <div class="image_2"></div>
         </div>
     </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slideshow img');
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
 </body>
 </html>
