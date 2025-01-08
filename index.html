@@ -54,53 +54,54 @@
         ashell.info@gmail.com<br>
         Portland, OR.<br>
         <br>
-        <br>
         <a href="https://www.are.na">Are.na</a><br>
         <a href="https://www.instagram.com">Instagram</a><br>
         <a href="https://www.linkedin.com">Linkedin</a><br>
         <br>
-        <br>
         Eric Schroeder - High Low, 2025<br>
-        DP and editor. Camera operated by  <a href="https://www.instagram.com/ethanvanfilm/">Ethan Van der Merwe</a>.<br>
+        DP and editor. Camera operated by Ethan Van der Merwe.<br>
         Freya Kargard as Eric Schroeder. Additional filming by Dylan Hayes<br>
         <br>
-        <br>
         <div class="slideshow" onclick="nextSlide()">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33492327/original_1825d0ea50107f55c101f259d292ff66.jpg?1736295008?bc=0" class="active" alt="Slide 1">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" alt="Slide 2">
+            <img src="https://example.com/image1.jpg" class="active" alt="Slide 1">
+            <img src="https://example.com/image2.jpg" alt="Slide 2">
+            <img src="https://example.com/image3.jpg" alt="Slide 3">
+            <img src="https://example.com/image4.jpg" alt="Slide 4">
+            <img src="https://example.com/image5.jpg" alt="Slide 5">
+            <img src="https://example.com/image6.jpg" alt="Slide 6">
         </div>
         <br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
-        Curation and visual identity. Gallery Install with help from <a href="https://sidpai.site/">Sid Pai</a><br>
+        Curation and visual identity. Gallery Install with help from Sid Pai<br>
         <br>
-        At Maps Good Space, 640 SE Stark St, Portland, OR 97214<br>
-        <br>
+        A shallow basin is a broad, bowl-shaped depression in the Earth's<br>
+        surface with higher sides than the bottom. Basins can be filled<br>
+        with water or empty, and can be formed by a variety of forces,<br>
+        including erosion and earthquakes.<br>
         <br>
         Portrait World, 2024<br>
         Visual identity, web design, merch and photography<br>
         Email for full branding guidelines deck<br>
         <br>
-        <br>
         No Pressure, 2024<br>
         Design, layout and copy<br>
         Featuring work and interviews from Chris Eurick, Joe Garlic and Travis Spinks<br>
         <br>
-        <br>
         <div class="slideshow" onclick="nextSlide()">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480851/original_9fc84e51b5b60f77835a0f02ab995e1e.png?1736273783?bc=0" class="active" alt="Slide 1">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480849/original_a29902bd816e4c86ae5ed6040dd4147a.png?1736273782?bc=0" alt="Slide 2">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480850/original_2f8e200d09df7438f62bdaad7a658bdb.png?1736273782?bc=0" alt="Slide 3">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480852/original_36d06f380c26cbbea3396aee2f178a19.png?1736273784?bc=0" alt="Slide 4">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480854/original_995f54f3c98d9f498e1dd98e3d319730.png?1736273787?bc=0" alt="Slide 5">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33480847/original_e114b61b28013efbac2290446574bec6.png?1736273777?bc=0" alt="Slide 6">
+            <img src="https://example.com/image1.jpg" class="active" alt="Slide 1">
+            <img src="https://example.com/image2.jpg" alt="Slide 2">
+            <img src="https://example.com/image3.jpg" alt="Slide 3">
+            <img src="https://example.com/image4.jpg" alt="Slide 4">
+            <img src="https://example.com/image5.jpg" alt="Slide 5">
+            <img src="https://example.com/image6.jpg" alt="Slide 6">
         </div>
+        <br>
         Specialized Rockhopper, 2023<br>
         Design, layout and copy<br>
         <br>
         Specialized Rockhopper is a love-letter to 80’s and 90’s mountain biking.<br>
         The book recounts a brief history of the sport, its pioneers, and how it<br>
         has evolved both culturally and technologically.<br>
-        <br>
         <br>
         Plum Books, 2021<br>
         Founder and creative director. Co operated with Ali Mehraban<br>
@@ -109,9 +110,7 @@
         based in San Diego, CA. We work closely with local risograph<br>
         Studio Burn All Books to produce zines, j-cards, pamphlets and prints.<br>
         <br>
-        <br>
         Website created by Alex Shelley, 2025 ©<br>
-        <br>
     </div>
     <div class="container" style="pointer-events: auto;">
         <div class="image_container">
@@ -121,12 +120,15 @@
     </div>
     <script>
         let currentSlide = 0;
-        const slides = document.querySelectorAll('.slideshow img');
+        const slideshows = document.querySelectorAll('.slideshow');
 
         function nextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
+            slideshows.forEach(slideshow => {
+                const slides = slideshow.querySelectorAll('img');
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            });
         }
     </script>
 </body>
