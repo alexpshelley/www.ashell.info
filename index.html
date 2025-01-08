@@ -65,13 +65,9 @@
         DP and editor. Camera operated by Ethan Van der Merwe.<br>
         Freya Kargard as Eric Schroeder. Additional filming by Dylan Hayes<br>
         <br>
-        <div class="slideshow" onclick="nextSlide()">
-            <img src="https://example.com/image1.jpg" class="active" alt="Slide 1">
-            <img src="https://example.com/image2.jpg" alt="Slide 2">
-            <img src="https://example.com/image3.jpg" alt="Slide 3">
-            <img src="https://example.com/image4.jpg" alt="Slide 4">
-            <img src="https://example.com/image5.jpg" alt="Slide 5">
-            <img src="https://example.com/image6.jpg" alt="Slide 6">
+        <div class="slideshow" onclick="nextSlide(0)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" class="active" alt="Slide 1">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33492327/original_1825d0ea50107f55c101f259d292ff66.jpg?1736295008?bc=0" alt="Slide 2">
         </div>
         <br>
         Shallow Basin, a group show inspired by distance and point of view, 2024<br>
@@ -90,7 +86,7 @@
         Design, layout and copy<br>
         Featuring work and interviews from Chris Eurick, Joe Garlic and Travis Spinks<br>
         <br>
-        <div class="slideshow wide" onclick="nextSlide()">
+        <div class="slideshow wide" onclick="nextSlide(1)">
             <img src="https://example.com/image1.jpg" class="active" alt="Slide 1">
             <img src="https://example.com/image2.jpg" alt="Slide 2">
             <img src="https://example.com/image3.jpg" alt="Slide 3">
@@ -122,16 +118,14 @@
         </div>
     </div>
     <script>
-        let currentSlide = 0;
+        let currentSlides = [0, 0];
         const slideshows = document.querySelectorAll('.slideshow');
 
-        function nextSlide() {
-            slideshows.forEach(slideshow => {
-                const slides = slideshow.querySelectorAll('img');
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            });
+        function nextSlide(slideshowIndex) {
+            const slides = slideshows[slideshowIndex].querySelectorAll('img');
+            slides[currentSlides[slideshowIndex]].classList.remove('active');
+            currentSlides[slideshowIndex] = (currentSlides[slideshowIndex] + 1) % slides.length;
+            slides[currentSlides[slideshowIndex]].classList.add('active');
         }
     </script>
 </body>
