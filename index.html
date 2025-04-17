@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Acumin+Variable+Concept:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acumin+Variable+Concept:wght@400;700&display=swap');
 
         * {
-            font-family: 'Acumin Variable Concept', Arial, sans-serif; /* Typeface set to Acumin Bold */
+            font-family: 'Acumin Variable Concept', Arial, sans-serif; /* Typeface set to Acumin */
         }
         body {
             margin: 0;
@@ -27,6 +27,12 @@
             position: absolute;
             font-size: 12px; /* Font size set to 12px */
             line-height: 1.2; /* Tight line height */
+        }
+        .information .bold {
+            font-weight: 700; /* Acumin Bold */
+        }
+        .information .regular {
+            font-weight: 400; /* Acumin Regular */
         }
         .container {
             z-index: 1;
@@ -80,17 +86,17 @@
 </head>
 <body>
     <div class="information">
-        Alex Shelley<br>
+        <span class="bold">Alex Shelley<br>
         ashell.info@gmail.com<br>
-        Portland, OR.<br>
+        Portland, OR.</span><br>
         <br>
-        <br>
+        <span class="regular">
         <a href="https://drive.google.com/file/d/1KxKdm6nrBGxvPtUpmzqLcbuXUoUX28kL/view?usp=sharing">Portfolio</a><br>
-        <br>
         <br>
         <a href="https://www.are.na">Are.na</a><br>
         <a href="https://www.instagram.com">Instagram</a><br>
         <a href="https://www.linkedin.com">Linkedin</a><br>
+        </span>
         <br>
         <br>
         Projects
