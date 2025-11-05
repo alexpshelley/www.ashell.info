@@ -71,7 +71,20 @@
         <br>[2]
         <br>
         <br>
-        <br><br>
+        <br>
+        <!-- Slideshow 3 -->
+<div class="slideshow wide" onclick="nextSlide(2)">
+  <img src="https://via.placeholder.com/650x400?text=Slide+3A" class="active" alt="Slide 3A">
+  <img src="https://via.placeholder.com/650x400?text=Slide+3B" alt="Slide 3B">
+  <img src="https://via.placeholder.com/650x400?text=Slide+3C" alt="Slide 3C">
+</div>
+
+<!-- Slideshow 4 -->
+<div class="slideshow wide" onclick="nextSlide(3)">
+  <img src="https://via.placeholder.com/650x400?text=Slide+4A" class="active" alt="Slide 4A">
+  <img src="https://via.placeholder.com/650x400?text=Slide+4B" alt="Slide 4B">
+  <img src="https://via.placeholder.com/650x400?text=Slide+4C" alt="Slide 4C">
+</div>
 
         <!-- Slideshow 1 -->
         <div class="slideshow wide" onclick="nextSlide(0)">
@@ -96,16 +109,24 @@
     </div>
 
     <script>
-        // Each slideshow has its own index
-        let currentSlides = [0, 0];
-        const slideshows = document.querySelectorAll('.slideshow');
+  // Find all slideshows on the page
+  const slideshows = document.querySelectorAll('.slideshow');
 
-        function nextSlide(slideshowIndex) {
-            const slides = slideshows[slideshowIndex].querySelectorAll('img');
-            slides[currentSlides[slideshowIndex]].classList.remove('active');
-            currentSlides[slideshowIndex] = (currentSlides[slideshowIndex] + 1) % slides.length;
-            slides[currentSlides[slideshowIndex]].classList.add('active');
-        }
-    </script>
+  // For each slideshow, track its current slide index
+  slideshows.forEach((show, index) => {
+    let current = 0;
+    const slides = show.querySelectorAll('img');
+
+    // Show the first image
+    slides[current].classList.add('active');
+
+    // On click, move to the next image
+    show.addEventListener('click', () => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
