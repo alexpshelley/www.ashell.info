@@ -7,47 +7,35 @@
         @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
 
         * {
-            font-family: 'Helvetica Neue', Arial, sans-serif; /* Typeface set to Helvetica Neue */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
         body {
             margin: 0;
-            font-size: 15px; /* Font size set to 15px */
-            line-height: 1.5; /* Tight line height */
-            color: #333333; /* Text color set to #333333 */
-            letter-spacing: 0.00em; /* Increased letter spacing */
-            background-color: #ffffff; /* Background color set to white */
+            font-size: 15px;
+            line-height: 1.5;
+            color: #333333;
+            background-color: #ffffff;
         }
         a, a:visited {
-            color: #333333; /* Link color set to navy blue */
+            color: #333333;
             text-decoration: none;
         }
         .information {
             z-index: 1000;
             margin: 1.2em;
             position: absolute;
-            font-size: 12px; /* Font size set to 12px */
-            line-height: 1.2; /* Tight line height */
-        }
-        .container {
-            z-index: 1;
-            width: 100vw;
-            height: 100vh;
-            margin: auto;
-            position: relative;
-        }
-        .image_container {
-            width: 650px;
-            height: 500px;
-            display: flex;
+            font-size: 12px;
+            line-height: 1.2;
         }
         .slideshow {
-            width: 500px; /* Set width to 500px */
+            width: 500px;
             cursor: pointer;
             position: relative;
             left: 0;
+            margin-bottom: 2em;
         }
         .slideshow.wide {
-            width: 650px; /* Set width to 650px */
+            width: 650px;
         }
         .slideshow img {
             width: 100%;
@@ -55,26 +43,6 @@
         }
         .slideshow img.active {
             display: block;
-        }
-        .info-container {
-            display: flex;
-            align-items: flex-start;
-        }
-        .info-text {
-            margin-right: 100px;
-        }
-        .top-info {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            padding: 1em;
-            box-sizing: border-box;
-        }
-        .top-info div {
-            text-align: center;
         }
     </style>
 </head>
@@ -93,21 +61,41 @@
         <a href="https://www.linkedin.com">Linkedin</a>
         <br>
         <br>
-        <br> <a href=index.html>Home</a>
-        <br> <a href=about.html>[1] About me</a>
-        <br> <a href=projects.html>[2] Projects</a>
-        <br> <a href=type.html>[3] Type and Illustration</a> 
-        <br> <a href=photo.html>[4] Photo and Video Work</a>
+        <br> <a href="index.html">Home</a>
+        <br> <a href="about.html">[1] About me</a>
+        <br> <a href="projects.html">[2] Projects</a>
+        <br> <a href="type.html">[3] Type and Illustration</a> 
+        <br> <a href="photo.html">[4] Photo and Video Work</a>
         <br>
         <br>
         <br>[2]
         <br>
         <br>
-        <br> Under Construction
+        <br>Under Construction
         <br>
+        <br><br>
+
+        <!-- Slideshow 1 -->
+        <div class="slideshow wide" onclick="nextSlide(0)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363211/original_3bdcb0f89119f85395fa967db33f19fd.jpg?1757259787?bc=0" class="active" alt="Slide 1A">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363212/original_ee020902fe9edfc758b99ccc855045fe.jpg?1757259787?bc=0" alt="Slide 1B">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881167/original_66d3457fc44eb56f713506aa50ff730a.png?1762377626?bc=0" alt="Slide 1C">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881171/original_e2572ffab11ab80f99f8df89df3ebe73.png?1762377629?bc=0" alt="Slide 1D">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881165/original_8d9888949c7d454bfe398b4c205165ad.png?1762377625?bc=0" alt="Slide 1F">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881164/original_9ebdd25337c011c1ff39898b5264e159.png?1762377624?bc=0" alt="Slide 1G">
+        </div>
+
+        <!-- Slideshow 2 -->
+        <div class="slideshow wide" onclick="nextSlide(1)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363315/original_edb4631bd312f5fa03e7075aabf7c92d.png?1757260176?bc=0" class="active" alt="Slide 2A">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40878389/original_82aa784a038ee8c77d9202527e0e6a8a.png?1762370780?bc=0" alt="Slide 2B">
+        </div>
+
     </div>
+
     <script>
-        let currentSlides = [0, 0, 0, 0];
+        // Each slideshow has its own index
+        let currentSlides = [0, 0];
         const slideshows = document.querySelectorAll('.slideshow');
 
         function nextSlide(slideshowIndex) {
