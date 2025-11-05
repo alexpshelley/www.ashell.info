@@ -9,6 +9,9 @@
         * {
             font-family: 'Helvetica Neue', Arial, sans-serif; /* Typeface set to Helvetica Neue */
         }
+        html { box-sizing: border-box; }
+        *, *::before, *::after { box-sizing: inherit; }
+
         body {
             margin: 0;
             font-size: 15px; /* Font size set to 15px */
@@ -16,6 +19,7 @@
             color: #333333; /* Text color set to #333333 */
             letter-spacing: 0.00em; /* Increased letter spacing */
             background-color: #ffffff; /* Background color set to white */
+            overflow-x: hidden; /* prevent accidental horizontal scroll */
         }
         a, a:visited {
             color: #c4c4c4; /* Link color set to navy blue */
@@ -27,13 +31,19 @@
             position: absolute;
             font-size: 12px; /* Font size set to 12px */
             line-height: 1.2; /* Tight line height */
+            left: 0;
+            right: 0;
+            max-width: 1100px;
+            padding: 0 1rem;
         }
         .container {
             z-index: 1;
-            width: 100vw;
+            width: 100%;
             height: 100vh;
             margin: auto;
             position: relative;
+            padding: 0 1rem; /* small horizontal padding on mobile */
+            box-sizing: border-box;
         }
         .image_container {
             width: 650px;
@@ -76,6 +86,23 @@
         .top-info div {
             text-align: center;
         }
+
+        /* Responsive media: ensure media and slides scale down on small screens */
+        img, iframe, .slideshow, .slideshow.wide {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Keep information centered and prevent it running off-screen */
+        .information {
+            left: 0;
+            right: 0;
+            max-width: 1100px;
+            margin: 1.2em auto;
+            padding: 0 1rem;
+        }
     </style>
 </head>
 <body>
@@ -92,13 +119,50 @@
         <a href="https://www.instagram.com">Instagram</a><br>
         <a href="https://www.linkedin.com">Linkedin</a>
         <br>
-        <br>
         <br> <a href=index.html>Home</a>
         <br> <a href=about.html>[1] About me</a>
         <br> <a href=projects.html>[2] Projects</a>
         <br> <a href=type.html>[3] Type and Illustration</a> 
         <br> <a href=photo.html>[4] Photo and Video Work</a>
         <br>
+        <br>
+        <br>
+        <br>
+        <div class="slideshow" onclick="nextSlide(0)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33482354/original_6ec0435de6bb0d2e7ebe45e6089fecf2.jpg?1736276810?bc=0" class="active" alt="Slide 1">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33492327/original_1825d0ea50107f55c101f259d292ff66.jpg?1736295008?bc=0" alt="Slide 2">
+        </div>
+        <br>
+        <div class="slideshow wide" onclick="nextSlide(1)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34490928/original_093d736cbd903257464154d05956e0e0.jpg?1739387368?bc=0" class="active" alt="Slide 1">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34490931/original_6bafb0e73060573a747dba54ee2ce290.jpg?1739387375?bc=0" alt="Slide 2">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34490929/or
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40878389/original_82aa784a038ee8c77d9202527e0e6a8a.png?1762370780?bc=0" alt="slide 9">
+        </div>
+        <br>
+        <div class="slideshow wide" onclick="nextSlide(4)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363315/original_edb4631bd312f5fa03e7075aabf7c92d.png?1757260176?bc=0" class="active" alt="Slide 1">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40878389/original_82aa784a038ee8c77d9202527e0e6a8a.png?1762370780?bc=0" alt="slide 2">
+        <div>
+        <br>
+        Specialized Rockhopper, 2023<br>
+        Design, layout and copy.<br>
+        <br>
+        <br>
+        <br>
+        <div class="slideshow" onclick="nextSlide(3)">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33519864/original_ecc3a5b0b5a173705391f57558e1213e.png?1736361118?bc=0" class="active" alt="Slide 1">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33519871/original_80b1de1d252640869fe5619adedd71bf.png?1736361126?bc=0" alt="Slide 2">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33519863/original_19d50212b1502de3196cbd7f49396a4e.png?1736361118?bc=0" alt="Slide 3">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33519868/original_7a2672d09e1171d1165b205f027ce56c.png?1736361124?bc=0" alt="Slide 4">
+            <img src="https://d2w9rnfcy7mm78.cloudfront.net/33519869/original_74457d42b8825228dc75e61f02135f82.png?1736361124?bc=0" alt="Slide 5">
+        </div> <br>
+        Week in Review, 2023-ongoing <br>
+        Design, layout and copy<br>
+        <br>
+        <br>
+        <br>
+        Website created in HTML by Alex Shelley, 2025 ©☮︎♐︎<br>
         <br>
     </div>
     <script>
