@@ -1,114 +1,153 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400&display=swap');
 
-        * {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #333333;
-            background-color: #ffffff;
-        }
-
-        a, a:visited {
-            color: #808080;
-            text-decoration: none;
-        }
-
-        .information {
-            z-index: 1000;
-            margin: 1.2em;
-            position: absolute;
-            font-size: 12px;
-            line-height: 1.2;
-        }
-
-        .slideshow {
-            width: 500px;
-            cursor: pointer;
-            position: relative;
-            left: 0;
-            margin-bottom: 2em;
-        }
-
-        .slideshow.wide {
-            width: 650px;
-        }
-
-        .slideshow.narrow {
-            width: 400px;
-        }
-
-        .slideshow img {
-            width: 100%;
-            display: none;
-        }
-
-        .slideshow img.active {
-            display: block;
-        }
-    </style>
+    * {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #333333;
+      background-color: #ffffff;
+    }
+    a, a:visited {
+      color: #808080;
+      text-decoration: none;
+    }
+    .information {
+      z-index: 1000;
+      margin: 1.2em;
+      position: absolute;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+    .slideshow {
+      width: 500px;
+      cursor: pointer;
+      position: relative;
+      left: 0;
+      margin-bottom: 2em;
+    }
+    .slideshow.wide {
+      width: 650px;
+    }
+    .slideshow.narrow {
+      width: 400px;
+    }
+    .slideshow img {
+      width: 100%;
+      display: none;
+    }
+    .slideshow img.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <div class="information">
-        Alex Shelley<br>
-        Graphic Design<br>
-        Portland, OR.<br>
-        ashell.info@gmail.com<br><br><br>
-        <span style="color: #88DB89;">Currently open to work</span><br><br><br>
-        <a href="https://www.are.na" target="_blank" rel="noopener noreferrer">Are.na</a><br>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><br>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
-        <br><br><br>
-        <a href="index.html">Home</a><br>
-        <a href="about.html">[1] About me</a><br>
-        <a href="projects.html">[2] Projects</a><br>
-        <a href="type.html">[3] Type and Illustration</a><br>
-        <a href="photo.html">[4] Photo and Video Work</a>
-        <br><br><br>[2]<br><br><br><br>
+  <div class="information">
+    Alex Shelley<br>
+    Graphic Design<br>
+    Portland, OR.<br>
+    ashell.info@gmail.com<br>
+    <br><br>
+    <span style="color: #88DB89;">Currently open to work</span><br><br>
+    <a href="https://www.are.na" target="_blank" rel="noopener noreferrer">Are.na</a><br>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><br>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a><br><br>
+    <a href="index.html">Home</a><br>
+    <a href="about.html">[1] About me</a><br>
+    <a href="projects.html">[2] Projects</a><br>
+    <a href="type.html">[3] Type and Illustration</a><br>
+    <a href="photo.html">[4] Photo and Video Work</a><br><br><br>[2]<br><br><br>
 
-        <!-- Slideshow 5 -->
-        <div class="slideshow narrow" onclick="nextSlide(0)">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915944/original_8471465acb01b9751365ee171f987058.png?1762463393?bc=0" class="active" alt="Slide 5A">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915940/original_4d7168c45c8247a84f2a2dc81025a36f.png?1762463390?bc=0" alt="Slide 5B">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915942/original_dc96db24a3fb8de999684d0ad3b440ea.png?1762463391?bc=0" alt="Slide 5C">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915939/original_566d3b19d4af02be06089511ef4f91dd.png?1762463390?bc=0" alt="Slide 5D">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915943/original_15647fa2f22b7546c5c0bc37748a0bf6.png?1762463391?bc=0" alt="Slide 5E">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915946/original_2abcbddc43da5f5deed15eb5915637f5.png?1762463393?bc=0" alt="Slide 5F">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915945/original_f95c27f317def616eed35ab5ccac6ba4.png?1762463393?bc=0" alt="Slide 5G">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915948/original_7803fe69f41583aa8becb7d4ed6be113.png?1762463394?bc=0" alt="Slide 5H">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915949/original_5a221eb7fc59d54201cc432718ee54ff.png?1762463394?bc=0" alt="Slide 5I">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915951/original_67c2eba51ef6aed9fc97530d7c7b9571.png?1762463395?bc=0" alt="Slide 5J">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915952/original_14f2779aec51209c624765e189a666ff.png?1762463395?bc=0" alt="Slide 5K">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915953/original_330178a333ed6609270cb9cc56368972.png?1762463396?bc=0" alt="Slide 5L">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915954/original_cd5803c6a93148d4b345af231a3b3007.png?1762463398?bc=0" alt="Slide 5M">
-        </div>
+    <!-- Brown Wetsuits -->
+    <div class="slideshow narrow">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915944/original_8471465acb01b9751365ee171f987058.png?1762463393?bc=0" class="active" alt="Slide 5A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915940/original_4d7168c45c8247a84f2a2dc81025a36f.png?1762463390?bc=0" alt="Slide 5B">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915942/original_dc96db24a3fb8de999684d0ad3b440ea.png?1762463391?bc=0" alt="Slide 5C">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915939/original_566d3b19d4af02be06089511ef4f91dd.png?1762463390?bc=0" alt="Slide 5D">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915943/original_15647fa2f22b7546c5c0bc37748a0bf6.png?1762463391?bc=0" alt="Slide 5E">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915946/original_2abcbddc43da5f5deed15eb5915637f5.png?1762463393?bc=0" alt="Slide 5F">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915945/original_f95c27f317def616eed35ab5ccac6ba4.png?1762463393?bc=0" alt="Slide 5G">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915948/original_7803fe69f41583aa8becb7d4ed6be113.png?1762463394?bc=0" alt="Slide 5H">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915949/original_5a221eb7fc59d54201cc432718ee54ff.png?1762463394?bc=0" alt="Slide 5I">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915951/original_67c2eba51ef6aed9fc97530d7c7b9571.png?1762463395?bc=0" alt="Slide 5J">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915952/original_14f2779aec51209c624765e189a666ff.png?1762463395?bc=0" alt="Slide 5K">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915953/original_330178a333ed6609270cb9cc56368972.png?1762463396?bc=0" alt="Slide 5L">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40915954/original_cd5803c6a93148d4b345af231a3b3007.png?1762463398?bc=0" alt="Slide 5M">
+    </div>
+    Brown Wetsuits (2025)<br>
+    Logo concepts and <a href="https://attachments.are.na/40916115/b6210c5f216d898aed49a234b1d9be7e.pdf?1762463867" target="_blank" rel="noopener noreferrer">brand system proposal</a> for Brown Wetsuits<br><br><br><br>
 
-        Brown Wetsuits (2025)<br>
-        Logo concepts and <a href="https://attachments.are.na/40916115/b6210c5f216d898aed49a234b1d9be7e.pdf?1762463867" target="_blank" rel="noopener noreferrer">brand system proposal</a> for Brown Wetsuits<br><br><br><br>
+    <!-- Slideshow 3 -->
+    <div class="slideshow narrow">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881735/original_d2a086812edd5f9d0fd90c33e78dd90e.png?1762379029?bc=0" class="active" alt="Slide 3A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881734/original_cbb1e9e7f07619947ca03e2c30597395.png?1762379028?bc=0" alt="Slide 3B">
+    </div>
 
-        <!-- Slideshow 3 -->
-        <div class="slideshow narrow" onclick="nextSlide(1)">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881735/original_d2a086812edd5f9d0fd90c33e78dd90e.png?1762379029?bc=0" class="active" alt="Slide 3A">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881734/original_cbb1e9e7f07619947ca03e2c30597395.png?1762379028?bc=0" alt="Slide 3B">
-        </div>
+    <!-- Slideshow 4 -->
+    <div class="slideshow wide">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469034/original_967cd61801a8f3e966b5b7e3c08fa20b.jpg?1739336516?bc=0" class="active" alt="Slide 4A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469882/original_f83efb62a78c31c9d6dd19f113f85320.jpg?1739341632?bc=0" alt="Slide 4B">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469036/original_75f60f9e62b862d5c37b193390f88632.jpg?1739336518?bc=0" alt="Slide 4C">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469037/original_0296b6fd199b6d4662a062cd3008d113.jpg?1739336518?bc=0" alt="Slide 4D">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469031/original_314acc3369a726873fec3e0b1af74bef.jpg?1739336514?bc=0" alt="Slide 4E">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469033/original_73f79ade452bba381f153c20a7a59793.jpg?1739336515?bc=0" alt="Slide 4F">
+    </div>
+    Shallow Basin, a group show inspired by distance and point of view (2025)<br>
+    Curation, creative direction, gallery install, flier and booklet design.<br><br><br><br>
 
-        <!-- Slideshow 4 -->
-        <div class="slideshow wide" onclick="nextSlide(2)">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469034/original_967cd61801a8f3e966b5b7e3c08fa20b.jpg?1739336516?bc=0" class="active" alt="Slide 4A">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469882/original_f83efb62a78c31c9d6dd19f113f85320.jpg?1739341632?bc=0" alt="Slide 4B">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469036/original_75f60f9e62b862d5c37b193390f88632.jpg?1739336518?bc=0" alt="Slide 4C">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469037/original_0296b6fd199b6d4662a062cd3008d113.jpg?1739336518?bc=0" alt="Slide 4D">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469031/original_314acc3369a726873fec3e0b1af74bef.jpg?1739336514?bc=0" alt="Slide 4F">
-            <img src="https://d2w9rnfcy7mm78.cloudfront.net/34469033/original_73f79ade452bba381f153c20a7a59793.jpg?1739336515?bc=0" alt="Slide 4G">
-        </div>
-        Shallow Basin, a group show inspired by distance and point of view (2025)<br>
-        Curation,
+    <!-- Slideshow 1 -->
+    <div class="slideshow wide">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363211/original_3bdcb0f89119f85395fa967db33f19fd.jpg?1757259787?bc=0" class="active" alt="Slide 1A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363212/original_ee020902fe9edfc758b99ccc855045fe.jpg?1757259787?bc=0" alt="Slide 1B">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881167/original_66d3457fc44eb56f713506aa50ff730a.png?1762377626?bc=0" alt="Slide 1C">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881171/original_e2572ffab11ab80f99f8df89df3ebe73.png?1762377629?bc=0" alt="Slide 1D">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881165/original_8d9888949c7d454bfe398b4c205165ad.png?1762377625?bc=0" alt="Slide 1E">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40881164/original_9ebdd25337c011c1ff39898b5264e159.png?1762377624?bc=0" alt="Slide 1F">
+    </div>
+
+    <!-- Slideshow 2 -->
+    <div class="slideshow wide">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/39363315/original_edb4631bd312f5fa03e7075aabf7c92d.png?1757260176?bc=0" class="active" alt="Slide 2A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/40878389/original_82aa784a038ee8c77d9202527e0e6a8a.png?1762370780?bc=0" alt="Slide 2B">
+    </div>
+    Specialized Rockhopper booklet (2023)<br>
+    Design, copy and product photography.<br><br><br><br>
+
+    <!-- The Week in Review -->
+    <div class="slideshow narrow">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34170031/original_e86c0fc21dcc696babe438b1112ee598.png?1738352254?bc=0" class="active" alt="Slide 6A">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34169474/original_33a0416095f2b2f2a70d304dabc2af03.png?1738350353?bc=0" alt="Slide 6B">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34169473/original_d3e275f2f49c9c7a9f7349ca44745b6e.png?1738350352?bc=0" alt="Slide 6C">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34169472/original_a2a1e9b01a94c931771c6c6adf61c9ab.png?1738350352?bc=0" alt="Slide 6D">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34169466/original_f1542338f912fce820c74bd572dffa3f.png?1738350343?bc=0" alt="Slide 6E">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/34169464/original_c97da8f63da36ed1116957f0e815db79.png?1738350341?bc=0" alt="Slide 6F">
+    </div>
+    The Week in Review (2023–ongoing)<br>
+    Design, copy and creative direction.<br>
+    The Week in Review is a digital take on a physical newsletter.<br><br><br><br>
+  </div>
+
+  <script>
+    // universal slideshow logic
+    const slideshows = document.querySelectorAll('.slideshow');
+    slideshows.forEach(show => {
+      let current = 0;
+      const slides = show.querySelectorAll('img');
+      slides[current].classList.add('active');
+      show.addEventListener('click', () => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
