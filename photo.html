@@ -58,14 +58,21 @@
         }
          .image-row {
               display: flex;
-              gap: 0px; /* space between images */
+              gap: 10px; /* space between images */
               justify-content: center; /* center horizontally */
               flex-wrap: wrap;
         }
         .image-row img {
-              width: 25%; /* or whatever size you want */
-              height: auto;
-        }
+    flex: 1 1 25%;          /* Each image takes ~25% of row, shrinks if needed */
+    max-width: 100%;        /* Never overflow container */
+    height: auto;
+}
+
+/* Stack images on small screens */
+@media screen and (max-width: 600px) {
+    .image-row img {
+        flex: 1 1 100%;     /* Each image takes full width */
+    }
         .info-container {
             display: flex;
             align-items: flex-start;
