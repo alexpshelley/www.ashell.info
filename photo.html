@@ -56,17 +56,24 @@
         .slideshow img.active {
             display: block;
         }
-         .image-row {
-              display: flex;
-              gap: 10px; /* space between images */
-              justify-content: center; /* center horizontally */
-              flex-wrap: wrap;
-        }
-        .image-row img {
-    flex: 1 1 25%;          /* Each image takes ~25% of row, shrinks if needed */
-    max-width: 100%;        /* Never overflow container */
-    height: auto;
+        .image-row {
+    display: flex;          /* keep row layout on desktop */
+    flex-wrap: wrap;        /* allow wrapping if needed */
+    gap: 10px;              /* space between images */
 }
+
+.image-row img {
+    width: auto;            /* let width be determined by flex-basis */
+    height: auto;
+    max-width: calc(25% - 10px); /* 3 images per row minus gap */
+}
+
+/* Stack images on small screens */
+@media screen and (max-width: 600px) {
+    .image-row img {
+        max-width: 100%;     /* full width for stacking */
+        flex-basis: 100%;    /* each image takes full row */
+    }
 
 /* Stack images on small screens */
 @media screen and (max-width: 600px) {
